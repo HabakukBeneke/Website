@@ -16,6 +16,26 @@
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
     "strict": true,
-    "types": ["vite/client"]
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@views/*": [
+        "./src/views/*"
+      ],
+      "@helpers/*": [
+        "./src/helpers/*"
+      ]
+    }
   }
 }
