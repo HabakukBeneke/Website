@@ -1,6 +1,6 @@
 import axios from 'axios';
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import MockInterceptor from './mockInterceptor';
+import MockInterceptor from '@helpers/mockInterceptor';
 
 export class ApiService {
   public axiosInstance: AxiosInstance;
