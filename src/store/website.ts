@@ -1,5 +1,5 @@
-import type { HeaderOption } from '@/interfaces/HeaderOption';
-import type { WebsiteOptions } from '@/interfaces/WebsiteOptions';
+import type { HeaderOption } from '@interfaces/HeaderOption';
+import type { WebsiteOptions } from '@interfaces/WebsiteOptions';
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 import type { Ref } from 'vue';

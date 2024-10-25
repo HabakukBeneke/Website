@@ -34,7 +34,7 @@ describe('Header Component E2E Tests', () => {
   });
 
   it('should show text when hovering over a header link', () => {
-    cy.get('.header__link').first().realHover();
+    cy.get('.header__link').first().trigger('mouseover');
     cy.get('.header__text').first().should('have.css', 'opacity', '1');
   });
 

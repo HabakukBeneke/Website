@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { ApiService } from '../../../src/helpers/api';
+import { ApiService } from '@helpers/api';
 
 describe('ApiService', () => {
   let apiService: ApiService;
@@ -25,7 +25,6 @@ describe('ApiService', () => {
     });
 
     it('should create an axios instance in dev mode', () => {
-      
       const service = new ApiService('https://api.com');
       expect(service.axiosInstance.interceptors).toBeDefined();
     });

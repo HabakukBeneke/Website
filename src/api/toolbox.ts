@@ -1,4 +1,4 @@
-import apiService from '@/helpers/api';
+import apiService from '@helpers/api';
 
 const RESOURCE: string = '/toolbox';
 
