@@ -1,7 +1,65 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <section class="hero">
+    <div class="hero__container">
+      <h1 class="hero__title">
+        Hola, mi nombre es <span class="hero__title--colored">Enrique Quero</span> <br />Front-end
+        developer.
+      </h1>
+      <ul class="hero__button-list">
+        <li class="hero__button"><a href="/about">Descubre mis proyectos</a></li>
+        <li class="hero__button"><a href="/about">¿Quien soy?</a></li>
+      </ul>
+    </div>
+  </section>
 </template>
+
+<style scoped lang="scss">
+.hero {
+  display: flex;
+  min-height: 75vh;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 3.2rem;
+    font-size: 4.6rem;
+    font-weight: 700;
+
+    &--colored {
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+
+  &__button-list {
+    text-align: left;
+    display: flex;
+    list-style: none;
+  }
+
+  &__button {
+    margin: 0 0.2rem;
+    a {
+      text-decoration: none;
+      font-size: 2.4rem;
+      font-weight: 700;
+      padding: 0.8rem 1.6rem;
+      color: $primary-color;
+      border: 2px solid;
+      border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%) 1;
+      transition: all 0.5s ease-out;
+      &:hover {
+        background: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
+        color: white;
+      }
+    }
+  }
+}
+</style>

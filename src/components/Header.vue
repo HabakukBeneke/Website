@@ -31,9 +31,9 @@ export default {
         <li v-for="option in headerOptions" :key="option.route" class="header__item">
           <router-link :to="option.route" class="header__link" active-class="is-active">
             <i :class="iconClass(option)"></i>
-            <div class="header__text">
+            <span class="header__text">
               {{ option.text }}
-            </div>
+            </span>
           </router-link>
         </li>
       </ul>
@@ -44,14 +44,15 @@ export default {
 <style scoped lang="scss">
 .header {
   width: $header-width;
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: $header-padding;
+
+  &__nav {
+    max-width: 415px;
+  }
 
   &__list {
     list-style: none;
-    @include flex-center(row);
+    @include flex-center(row, left);
     gap: $gap-size;
     margin: 0;
     padding: 0;
@@ -62,7 +63,7 @@ export default {
   }
 
   &__item {
-    flex: 1 1 auto;
+    flex: 1;
     text-align: center;
 
     i {
@@ -73,12 +74,13 @@ export default {
   &__text {
     opacity: 0;
     transition: opacity 0.3s;
+    font-weight: 500;
   }
 
   &__link {
     @include flex-center(column);
     text-decoration: none;
-    color: $nav-color;
+    color: $primary-color;
     width: 100%;
 
     &:hover {

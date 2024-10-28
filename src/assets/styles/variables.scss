@@ -20,12 +20,15 @@ $icon-computer: unquote('"\\e904"');
 
 // Icon sizes
 $icon-s: 18px;
-$icon-m: 30px;
+$icon-m: 25px;
 
 // Colors
-$nav-color: red;
+$primary-color: #00baaf;
 $header-width: 100%;
+$color-background: #f7f8f3;
+$color-text: #272341;
 
 // Spacing and dimensions
+$screen-size: 1320px    ;
 $gap-size: 1.5rem;
 $header-padding: 1rem;

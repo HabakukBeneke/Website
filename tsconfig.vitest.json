@@ -25,6 +25,9 @@
       ],
       "@helpers/*": [
         "./src/helpers/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
       ]
     }
   }
