@@ -4,8 +4,16 @@ import Header from '@components/Header.vue';
 </script>
 
 <template>
-  <Header />
-  <RouterView />
+  <div id="main">
+    <Header />
+    <RouterView />
+  </div>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+#main {
+  position: relative;
+  max-width: $screen-size;
+  margin: 0 auto;
+}
+</style>
