@@ -4,11 +4,11 @@
   <section class="hero">
     <div class="hero__container">
       <h1 class="hero__title">
-        Hola, mi nombre es <span class="hero__title--colored">Enrique Quero</span> <br />Front-end
-        developer.
+        Hola, mi nombre es <span class="hero__title--colored">Enrique Quero</span> <br />Web
+        Developer.
       </h1>
-      <ul class="hero__button-list">
-        <li class="hero__button"><a href="/about">Descubre mis proyectos</a></li>
+      <ul class="hero__button-list align-left">
+        <li class="hero__button"><a href="/portfolio">Descubre mis proyectos</a></li>
         <li class="hero__button"><a href="/about">¿Quien soy?</a></li>
       </ul>
     </div>
@@ -39,9 +39,9 @@
   }
 
   &__button-list {
-    text-align: left;
     display: flex;
     list-style: none;
+    padding-left: 0;
   }
 
   &__button {
@@ -54,7 +54,7 @@
       color: $primary-color;
       border: 2px solid;
       border-image: linear-gradient(135deg, #02aab0 0%, #00cdac 100%) 1;
-      transition: all 0.5s ease-out;
+      transition: all 0.4s ease-out;
       &:hover {
         background: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
         color: white;
