@@ -54,7 +54,7 @@
     a {
       text-decoration: none;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: 700; 
       padding: 0.8rem 1.6rem;
       color: $primary-color;
       border: 2px solid;
