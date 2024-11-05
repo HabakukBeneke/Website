@@ -72,9 +72,17 @@ export default {
   }
 
   &__text {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s;
     font-weight: 500;
+
+    @media screen and (max-width: 338px) {
+      font-size: 1rem;
+    }
+
+    @media (pointer: fine) and (hover: hover) {
+      opacity: 0;
+    }
   }
 
   &__link {

@@ -24,17 +24,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0 2rem;
   }
 
   &__title {
     text-align: left;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2rem;
     font-size: 4.6rem;
     font-weight: 700;
 
     &--colored {
       color: $primary-color;
       font-weight: 700;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 3rem;
     }
   }
 
@@ -48,8 +53,8 @@
     margin: 0 0.2rem;
     a {
       text-decoration: none;
-      font-size: 2.4rem;
-      font-weight: 700;
+      font-size: 1rem;
+      font-weight: 700; 
       padding: 0.8rem 1.6rem;
       color: $primary-color;
       border: 2px solid;
@@ -58,6 +63,14 @@
       &:hover {
         background: linear-gradient(135deg, #02aab0 0%, #00cdac 100%);
         color: white;
+      }
+
+      @media screen and (min-width: 425px) {
+        font-size: 1.6rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 2.4rem;
       }
     }
   }
