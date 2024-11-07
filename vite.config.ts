@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'node:url';
 import vue from '@vitejs/plugin-vue';
 import vueDevTools from 'vite-plugin-vue-devtools';
 import { defineConfig } from 'vite';
+import vueI18n from '@intlify/vite-plugin-vue-i18n';
 
 export default defineConfig({
   base: './',
@@ -10,7 +11,13 @@ export default defineConfig({
       provider: 'v8'
     }
   },
-  plugins: [vue(), vueDevTools()],
+  plugins: [
+    vue(),
+    vueDevTools(),
+    vueI18n({
+      include: path.resolve(__dirname, './src/i18n/locales/**')
+    })
+  ],
   css: {
     preprocessorOptions: {
       scss: {
